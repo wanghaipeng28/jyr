@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>增加管理员</title>
+		<meta name="keywords" content="html,css" />
+		<meta name="description" content="html,css" />
+		<!--meta http-equiv="refresh" content="20" /-->
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	</head>
+	<body>
+		<h2>增加管理员</h2>	
+		<form>
+		<table cellpadding="6px" cellspacing="6px">
+			<tr>
+				<td>姓名:</td>
+				<td>
+					<input type="text" maxlength="10" name="username" />
+				</td>
+				<td>10个字符以内</td>
+			</tr>
+			<tr>
+				<td>密码:</td>
+				<td>
+					<input type="password" maxlength="10" name="userpass" value="*****" />
+				</td>
+				<td>10个字符以内</td>
+			</tr>
+			<tr>
+				<td>性别:</td>
+				<td>
+					<input id="fem" type="radio" name="xb" value="Female" /><label for="fem">女士</label>
+					<input id="ma" type="radio" name="xb" value="Male" checked /><label for="ma">男士</label>
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>角色:</td>
+				<td>
+					<input id="su" type="checkbox" name="js" value="super" /><label for="su">超级管理员</label>
+					<input id="zd" type="checkbox" name="js" value="zdgly" /><label for="zd">账单管理员</label>
+				</td>
+				<td>至少选择一个角色</td>
+			</tr>
+			<tr>
+				<td>头像:</td>
+				<td><input type="file" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="保存" />
+					<input type="reset" value="重填" />
+				</td>
+				<td></td>
+			</tr>
+		</table>
+		</form>
+	</body>
+<html>

@@ -1,0 +1,25 @@
+header{
+width:1000px;
+height:100px;
+margin:0px auto;
+margin-top:230px;
+}
+section{
+width:773px;
+height:390px;
+margin:0px auto;
+}
+footer{
+width:400px;
+height:30px;
+margin:0px auto;
+}
+#hydl{
+font-size:25pt;
+}
+footer{
+text-align:center;
+}
+#s1 a{
+text-decoration:none;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>求职申请</title>
+		<meta name="keywords" content="html,css" />
+		<meta name="description" content="html,css" />
+		<!--meta http-equiv="refresh" content="20" /-->
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	</head>
+	<body>
+		<h2>--&gt;&gt;<mark>求职申请<mark>&lt;&lt;--</h2>
+		<form method="get">
+		<table cellpadding="5px">
+			<tr>
+				<td align="right">用户名:</td>
+				<td><input type="text" name="username" /></td>
+			</tr>
+			<tr>
+				<td align="right">密码:</td>
+				<td><input type="password" name="userpass" /></td>
+			</tr>
+			<tr>
+				<td align="right">籍贯:</td>
+				<td>
+					<select>
+						<option>北京</option>
+						<option selected>南京</option>
+						<option>广州</option>
+						<option>深圳</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">性别:</td>
+				<td>
+					<input id="male" type="radio" name="xb" value="male" /><label for="male">男</label>
+					<input id="female" type="radio" name="xb" value="female" /><label for="female">女</label>
+					<input id="btl" type="radio" name="xb" value="btl" checked /><label for="btl">不透露</label>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">头像:</td>
+				<td><input type="file" /></td>
+			</tr>
+			<tr>
+				<td colspan="2">愿意到以下城市工作:</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<select size="5" multiple name="city">
+						<option value="bj">北京</option>
+						<option value="sh">上海</option>
+						<option value="nj">南京</option>
+						<option value="sz" selected>深圳</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">留言:</td>
+				<td>
+					<textarea name="ly" cols="18" rows="4"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="提交" />
+					<input type="reset" value="清除" />
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input id="gk" type="checkbox" name="gk" value="bgk"><label for="gk">不要公开我的信息</label></td>
+			</tr>
+		</table>
+		</form>
+	</body>
+<html>
