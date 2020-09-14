@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+ </head>
+ <body>
+  <form action="http://www.baidu.com" method="get">
+	<fieldset>
+		<legend>用户基本信息</legend>
+		<p>
+			用户名称：<input name="username" type="text" maxlength="10" value="请输入用户名称" >
+		</p>
+		<p>
+			用户密码：<input name="userpass" type="password">
+		</p>
+		<p>
+			确认密码：<input name="repass" type="passwordd">
+		</p>
+	</fieldset>
+	<p>
+		用户性别：
+			<input id="male" type="radio" name="gender" value="Male" checked>
+			<label for="male">男</label>
+			<input type="radio" name="gender" value="Female">女
+	</p>
+	<p>
+		用户爱好：
+			<input type="checkbox" name="hobby" value="eat">吃
+			<input type="checkbox" name="hobby" value="drink">喝
+			<input type="checkbox" name="hobby" value="play">玩
+			<input type="checkbox" name="hobby" value="happy">乐
+	</p>
+	<p>
+		<input type="hidden" name="userID" value="334455" >
+	</p>
+	<p>
+		选择头像：
+			<input type="file" name="userImg" />
+	</p>
+	<p>
+		自我介绍：
+		<textarea cols="50" rows="5"></textarea>
+	</p>
+	<p>
+		意向工作城市：
+		<select name="city" size="3" multiple>
+			<option value="BJ">北京</option>
+			<option value="SH">上海</option>
+			<option value="GZ">广州</option>
+			<option value="SZ" selected>深圳</option>
+		</select>
+	</p>
+	<p>
+		按钮：
+			<input type="submit" value="注册" >
+			<input type="reset" value="恢复到出厂设置" >
+			<input type="button" value="普通按钮" >
+			<button type="button">非input按钮</button>
+	</p>
+  </form>
+ </body>
+</html>
