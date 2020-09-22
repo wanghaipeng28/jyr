@@ -1,0 +1,35 @@
+nav{
+width:550px;
+height:150px;
+border:1px solid #333;
+margin-top:50px;
+overflow:auto;
+}
+div{
+width:795px;
+height:115px;
+padding-top:10px;
+padding-left:10px;
+}
+img{
+width:100px;
+border:2px solid #ccc;
+box-shadow:2px 2px 1px;
+border-radius:4px;
+}
+img:hover{
+border:2px solid red;
+position:relative;
+bottom:3px;
+right:3px;
+}
+#d1{
+width:0px;
+height:0px;
+border:50px solid blue;
+padding:0px;
+border-left-color:yellow;
+border-right-color:green;
+border-bottom-color:red;
+border-top-color:blue;
+}
