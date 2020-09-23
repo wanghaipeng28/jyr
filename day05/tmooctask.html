@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>淘宝登陆页</title>
+		<meta name="keywords" content="html,css" />
+		<meta name="description" content="html,css" />
+		<!--meta http-equiv="refresh" content="20" /-->
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="tmoocstyle.css" />
+		<script>
+			function showCover(){
+									var c=document.getElementById("cover");
+									c.style.display="block";
+									var d=document.getElementById("dialog");
+									d.style.display="block";
+			}
+			function closeCover(){
+									var c=document.getElementById("cover");
+									c.style.display="none";
+									var d=document.getElementById("dialog");
+									d.style.display="none";
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+		</header>
+		<section>
+			<div id="main">
+				<form>
+					<table>
+						<tr>
+							<td id="dl">登录</td>
+							<td>
+								<div id="ewm" onclick="showCover()" ></div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="t1" type="text" name="username" placeholder="请输入用户名称" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="t2" type="password" name="userpsw" />
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<input id="safel" type="checkbox" name="safel" value="sfl" />
+								<label for="safel">安全控件登录</label>
+								<a href="#">忘记登录密码？</a>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<input id="button1" type="submit" value="登录">
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<img src="images/tb3.png" /> <a href="#" id="tb3">微博登录</a>
+								<img src="images/tb4.png" /> <a href="#">支付宝登录</a>
+								<a href="#" id="zc">免费注册</a>
+							</td>
+						</tr>
+					</table>
+				</form>
+				<div id="cover"></div>
+				<div id="dialog">
+					<p>
+						<span onclick="closeCover()">x</span>
+					</p>
+					<img src="images/ewm.png" width="190px" />
+				</div>
+			</div>
+		</section>	
+	</body>
+<html>

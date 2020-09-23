@@ -1,0 +1,120 @@
+header,section{
+width:1240px;
+margin:0px auto;
+/*添加虚线边框*/
+/*border:2px dotted blue;*/
+}
+header{
+height:80px;
+margin-top:20px;
+background:url("images/taobaolog.png") no-repeat 5px 9px;
+background-size:12%;
+}
+section{
+height:420px;
+background:url("images/tb1.png") no-repeat 160px 35px;
+background-size:35%;
+border:1px solid transparent;
+/*添加虚线边框*/
+/*border:2px dotted blue;*/
+}
+#main{
+width:430px;
+height:370px;
+border:1px solid #ccc;
+border-top:2px solid red;
+margin-left:770px;
+margin-top:25px;
+background:url("images/tb2.png") no-repeat 370px 0px;
+background-size:15%;
+/*添加虚线边框*/
+/*border:2px dotted blue;*/
+}
+#main table{
+width:336px;
+height:370px;
+margin:0px;
+margin-left:45px;
+/*添加虚线边框*/
+/*border:2px dotted blue;*/
+}
+#dl{
+font-size:20pt;
+font-weight:bold;
+}
+#t1,#t2{
+height:35px;
+width:291px;
+border:1px solid #ddd;
+}
+#t1{
+background:url("images/user.png") no-repeat 0px -2px;
+background-size:12%;
+padding-left:45px;
+}
+#t2{
+background:url("images/pwd.png") no-repeat 0px -2px;
+background-size:12%;
+padding-left:45px;
+}
+#button1{
+width:335px;
+height:46px;
+font-size:20pt;
+color:white;
+border:none;
+background-color:#ff4400;
+outline:none;
+}
+#button1:active{
+width:334px;
+height:46px;
+border:2px solid gray;
+}
+#t2:focus{
+outline:1px solid blue;
+}
+#t1:focus{
+outline:1px solid blue;
+}
+#zc{
+margin-left:50px;
+}
+#ewm{
+height:35px;
+width:35px;
+cursor:pointer;
+float:right;
+}
+#cover{
+width:430px;
+height:370px;
+background-color:white;
+position:relative;
+bottom:369px;
+z-index:10;
+opacity:0.8;
+display:none;
+}
+#dialog{
+width:210px;
+height:225px;
+background-color:white;
+position:relative;
+bottom:670px;
+left:108px;
+z-index:20;
+text-align:center;
+border:1px solid red;
+display:none;
+}
+#dialog>p{
+text-align:right;
+margin:0px 5px;
+font-size:20pt;
+padding:0px;
+}
+#dialog span{
+padding:2px 5px;
+cursor:pointer;
+}
