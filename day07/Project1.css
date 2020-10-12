@@ -1,0 +1,89 @@
+#top{
+	width:1210px;
+	height:40px;
+	background-color:#E44144;
+	margin:0px auto;}
+#top .nav-top{
+	float:left;
+	width:210px;
+	background-color:#CD292B;
+	}
+#top .nav-top a{
+	float:left;
+	padding:9px 20px;
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	text-decoration:none;
+	}
+#top .nav-top b{
+	float:right;
+	width:18px;
+	height:18px;
+	margin:10px 0px;
+	background:url("images/iconlist_2.png") no-repeat -66px 0px;
+	background-color:#CD292B;
+	}
+#top .nav-top b:hover{
+	background-position:-66px -24px;
+	}
+ul,li{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	}
+#top>ul>li{
+	float:left;
+	}
+#top>ul>li>a{
+	float:left;
+	font-size:16px;
+	line-height:40px;
+	text-decoration:none;
+	padding:0px 25px;
+	color:#fff;
+	font-weight:900;
+	}
+#top>ul>li>a:hover{
+	background-color:#CD292B;
+	}
+.nav-top:hover #nav-aside{
+  display: block;
+}
+
+#nav-aside{
+  display: none;
+	width:206px;
+	height:410px;
+	background-color:#F9F9F9;
+	clear:both;
+	border:2px solid #CD292B;
+	}
+#top #nav-aside a{
+	color:#5B6161;
+	padding:0px;
+	float:none;
+	font-family:"microsoft yahei";
+	font-weight:400;
+	font-size:14px;
+	}
+#top #nav-aside li{
+	height:30px;
+	line-height:29px;
+	border-bottom:1px solid #fefefe;
+	margin:10px 2px;
+	padding:0px 10px;
+	border:1px solid transparent;
+	}
+#top #nav-aside ul{
+	position:relative;
+	z-index:10;
+	}
+#top #nav-aside li:hover{
+	position:relative;
+	z-index:20;
+	background-color:#fff;
+	width:185px;
+	border:1px solid #ccc;
+	border-right-color:#fff;
+	}
