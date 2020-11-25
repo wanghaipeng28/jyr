@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>燃气使用情况</title>
+</head>
+<body>
+	<div align="center" style="margin-top: 40px">
+		<input id="input" placeholder="请输入当前表码！" style="padding:2px;position:relative;top:-1px" />
+		<input id="btn" type="button" value="计算" />
+	</div>
+	<output id="output" style="display: block; width: 100%;border: 1px solid #ddd;margin-top:10px;min-height:100px"></output>
+	<script>
+		var btn = document.getElementById("btn");
+		btn.addEventListener("click", function(){
+			var end = document.getElementById("input").value;
+			var output = document.getElementById("output");
+			output.innerHTML = "";
+			if (!end) {
+				output.innerHTML = "请输入当前天然气表码！";
+				return				
+			}
+			if (isNaN(end)) {
+				output.innerHTML = "输入的格式不规范，表格格式是个数字例如：1.1！";
+				return
+			}
+			var startDate = new Date("2020/11/23 11:51:00");
+			var endDate = new Date();
+			var time = endDate.getTime() - startDate.getTime();
+			var start = 507.975;
+			end = end - 0;
+			var total = end - start;
+			var day = time/1000/3600/24;
+			var arg = (total / day).toFixed(3);
+			var msg = `总共用了${day.toFixed(1)}(天)， 总共使用了${total.toFixed(3)}(方)燃气，平均每天使用${arg}(方)燃气。`;
+			output.innerHTML = msg;
+		}, false);
+	</script>
+</body>
+</html>
